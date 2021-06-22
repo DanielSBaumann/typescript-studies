@@ -12,9 +12,11 @@ const aa = {
     nome: 'Joao',
     sobrenome: 'Silva'
 }
+
 const ab = aa
 ab.nome = 'Jose'
 console.log(aa, ab)
+
 const ac = { ...aa }
 ac.sobrenome = 'Nogueira'
 console.log(aa, ab, ac)
