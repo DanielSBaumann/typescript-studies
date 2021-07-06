@@ -20,3 +20,4 @@ console.log(niver.getDate())
 console.log(niver.getMonth() + 1) //mes começa do zero
 console.log(niver.getFullYear())
 console.log(niver.getDay()) // 0 -> Domingo , 6 -> Sabado
+console.log(niver.getHours())
