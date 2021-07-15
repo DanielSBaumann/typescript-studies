@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(11, 91, 102);
+        }
+
+        .box {
+            background-color: white;
+            height: 64vh;
+            width: 40%;
+            margin: 10vh auto;
+            border-radius: 12px;
+            padding: 6vh 4%;
+        }
+
+        .display {
+            width: 92%;
+            color: black;
+            height: 8vh;
+            margin-bottom: 1vh;
+            text-align: right;
+            font-size: 2em;
+            padding: 0 4%;
+        }
+
+        .calc{
+            width: 102%;
+            height: 44vh;
+            background-color: white;
+            border-radius: 6px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .btn{
+            width: 90%;
+            height: 8vh;
+            margin: .4vh 5%;
+            border: none;
+            border-radius: 2px;
+            font-size: 1.2em;
+            background-color: rgb(216, 203, 203);
+            transition: all linear .3s;
+        }
+
+        .btn:hover{
+            background-color: rgb(170, 163, 163); 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Calculadora</h1>
+
+        <input type="text" class="display" disabled>
+
+        <div class="calc">
+
+            <div><button class="btn btn-clear">C</button></div>
+            <div><button class="btn btn-num">(</button></div>
+            <div><button class="btn btn-num">)</button></div>
+            <div><button class="btn btn-num">/</button></div>
+            <div><button class="btn btn-num">7</button></div>
+            <div><button class="btn btn-num">8</button></div>
+            <div><button class="btn btn-num">9</button></div>
+            <div><button class="btn btn-num">*</button></div>
+            <div><button class="btn btn-num">4</button></div>
+            <div><button class="btn btn-num">5</button></div>
+            <div><button class="btn btn-num">6</button></div>
+            <div><button class="btn btn-num">+</button></div>
+            <div><button class="btn btn-num">1</button></div>
+            <div><button class="btn btn-num">2</button></div>
+            <div><button class="btn btn-num">3</button></div>
+            <div><button class="btn btn-num">-</button></div>
+            <div><button class="btn btn-num">.</button></div>
+            <div><button class="btn btn-num">0</button></div>
+            <div><button class="btn btn-dell">&lt;&lt;</button></div>
+            <div><button class="btn btn-eq">=</button></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
